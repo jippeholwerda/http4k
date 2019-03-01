@@ -3,6 +3,10 @@
 This list is not currently intended to be all-encompassing - it will document major and breaking API 
 changes with their rationale when appropriate:
 
+### v3.180.0 (uncut)
+- (Forced-due-to-API-deprecation) Breaking: Reimplemented `http4k-testing-webdriver` to be compatible with upcoming v4.0 API. This means we now implement our own `By` classes, which can be found in the `org.http4k.webdriver` package. X-path based 
+searches were never supported by this module, so this is now enforced consistently. 
+
 ### v3.179.0
 - [http4k-contract] Added `OpenApiExtension` interface, which allows the definition of extensions that will modify the OpenApi specification JSON. H/T @rgladwell for the inspiration.
 - [http4k-contract] Support composite security models using `or()` and `and()`. Once again, H/T @rgladwell :)
