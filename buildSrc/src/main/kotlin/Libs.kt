@@ -271,6 +271,14 @@ object Libs {
      const val kotlin_stdlib_jdk8: String = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:" +
                Versions.org_jetbrains_kotlin
 
+    /**
+     * [kotlinx-coroutines-core website](https://github.com/Kotlin/kotlinx.coroutines) */
+    const val kotlinx_coroutines_core: String =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:" + Versions.kotlinx_coroutines_core
+
+    /**
+     * [json website](https://github.com/douglascrockford/JSON-java) */
+    const val json: String = "org.json:json:" + Versions.json
      /**
       * https://github.com/douglascrockford/JSON-java
       */

@@ -89,7 +89,9 @@ object Versions {
 
      const val org_jetbrains_kotlin: String = "1.3.50"
 
-     const val json: String = "20190722"
+     const val kotlinx_coroutines_core: String = "1.2.2"
+
+     const val json: String = "20180813"
 
      const val jsoup: String = "1.12.1"
 
