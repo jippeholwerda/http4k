@@ -276,12 +276,8 @@ object Libs {
     const val kotlinx_coroutines_core: String =
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:" + Versions.kotlinx_coroutines_core
 
-    /**
-     * [json website](https://github.com/douglascrockford/JSON-java) */
-    const val json: String = "org.json:json:" + Versions.json
      /**
-      * https://github.com/douglascrockford/JSON-java
-      */
+      * [json website](https://github.com/douglascrockford/JSON-java) */
      const val json: String = "org.json:json:" + Versions.json
 
      /**
