@@ -1,4 +1,4 @@
-package blog.typesafe_configuration.pre
+package tutorials.blog.typesafe_configuration.pre
 
 import java.time.Duration
 
