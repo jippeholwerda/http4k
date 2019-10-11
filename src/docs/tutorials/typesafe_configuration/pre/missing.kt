@@ -1,4 +1,4 @@
-package tutorials.blog.typesafe_configuration.pre
+package tutorials.typesafe_configuration.pre
 
 // export ANTIDISESTABLISHMENTARIANISM=opposition to the disestablishment of the Church of England
 

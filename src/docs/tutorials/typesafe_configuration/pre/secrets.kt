@@ -1,4 +1,4 @@
-package tutorials.blog.typesafe_configuration.pre
+package tutorials.typesafe_configuration.pre
 
 import kotlinx.coroutines.runBlocking
 import org.http4k.client.OkHttp
