@@ -76,6 +76,8 @@ sealed class BodyContent {
         val schema = OneOf(
             schemas.filterIsInstance<NoSchema<NODE>>().map { it.schema } +
                 schemas.filterIsInstance<SchemaContent<NODE>>().mapNotNull { it.schema }
+                    .toSet()
+                    .toList()
         )
 
         override fun definitions() = schemas

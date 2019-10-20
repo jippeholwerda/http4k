@@ -229,6 +229,41 @@
         "operationId": "putBasepathBody_auto_schema"
       }
     },
+    "/basepath/body_auto_schema_merge_schemas": {
+      "post": {
+        "summary": "<unknown>",
+        "description": null,
+        "tags": [
+          "/basepath"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/InterfaceHolder",
+                      "example": null
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+            ]
+          }
+        ],
+        "operationId": "postBasepathBody_auto_schema_merge_schemas"
+      }
+    },
     "/basepath/body_auto_schema_multiple_body_schemas": {
       "post": {
         "summary": "<unknown>",
@@ -974,6 +1009,53 @@
         "required": [
           "additional",
           "uri"
+        ]
+      },
+      "InterfaceHolder": {
+        "properties": {
+          "obj": {
+            "$ref": "#/components/schemas/Impl2",
+            "example": null
+          }
+        },
+        "example": {
+          "obj": {
+            "value": 123
+          }
+        },
+        "type": "object",
+        "required": [
+          "obj"
+        ]
+      },
+      "Impl1": {
+        "properties": {
+          "value": {
+            "example": "bob",
+            "type": "string"
+          }
+        },
+        "example": {
+          "value": "bob"
+        },
+        "type": "object",
+        "required": [
+          "value"
+        ]
+      },
+      "Impl2": {
+        "properties": {
+          "value": {
+            "example": 123,
+            "type": "number"
+          }
+        },
+        "example": {
+          "value": 123
+        },
+        "type": "object",
+        "required": [
+          "value"
         ]
       }
     },
